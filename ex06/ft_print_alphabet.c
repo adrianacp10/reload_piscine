@@ -17,3 +17,9 @@ void    ft_print_alphabet(void)
         a++;
     }
 }
+/*
+int main()
+{
+    ft_print_alphabet();
+    return(0);
+}*/
