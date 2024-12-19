@@ -1,5 +1,31 @@
-#include <unistd.h>
+void ft_putchar(char c);
 
+void ft_print(char *str)
+{
+    int i;
+    i = 0;
+
+    while (*str != '\0')
+    {
+        ft_putchar(*str);
+        str++;
+    }
+}
+
+int main(int argc, char *av[])
+{
+    int j;
+    j = 1;
+
+    while (j < argc)
+    {
+        ft_print(av[j]);
+        ft_putchar('\n'); 
+        j++;
+    }
+}
+
+/*
 int main(int argc, char *av[])
 {
     int i;
@@ -18,4 +44,4 @@ int main(int argc, char *av[])
         j++;
     }
     return(0);
-}
+}*/
